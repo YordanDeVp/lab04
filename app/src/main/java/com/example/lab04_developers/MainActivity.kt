@@ -31,17 +31,30 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun ViewHolaCurso() {
+    Column(
+        modifier = Modifier
+            .fillMaxWith()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "Welcome to the Course!",
+            fontSize = 28.sp,
+            fontWeight = FontWeigh.Bold
+        )
+        Spacer(modifier = Modifier.heigh(16.dp))
+        Text(
+            text = "Hello, Student!",
+            fontSize = 20.xD
 
+<<<<<<< HEAD
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     Lab04_DevelopersTheme {
         Greeting("Sapacayo AA")
+=======
+>>>>>>> bf69eaf23afcce5e258874c521561f396c7cbfc0
     }
 }
